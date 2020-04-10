@@ -26,7 +26,7 @@ $(function() {
   
       var newBurger = {
         burger_name: $("#ca").val().trim(),
-        devoured: $("[burger_name=devoured]:checked").val().trim()
+        // devoured: $("[burger_name=]:checked").val().trim()
       };
   
       // Send the POST request.
@@ -36,7 +36,6 @@ $(function() {
       }).then(
         function() {
           console.log("created a burger");
-          // Reload the page to get the updated list
           location.reload();
         }
       );
