@@ -12,11 +12,17 @@ var burger = {
       cb(res);
     });
   },
-  updateOne: function(condition, cb) {
-    orm.updateOne("burgers", condition, function(res) {
+  updateOne: function(objColVals,condition, cb) {
+    orm.updateOne("burgers", objColVals, condition, function(res) {
       cb(res);
     });
   }
+
+  // update: function(objColVals, condition, cb) {
+  //   orm.update("cats", objColVals, condition, function(res) {
+  //     cb(res);
+  //   });
+  // },
 };
 
 // Export the database functions for the controller (burgers_Controller.js).

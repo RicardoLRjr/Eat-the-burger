@@ -7,8 +7,7 @@ USE burgers_db;
 CREATE TABLE burgers
 (
 	id int NOT NULL AUTO_INCREMENT,
-	author varchar(150) NOT NULL,
-	devoured boolean,
+	burger_name varchar(150) NOT NULL,
+	devoured boolean DEFAULT false,
 	PRIMARY KEY (id)
-
 );
